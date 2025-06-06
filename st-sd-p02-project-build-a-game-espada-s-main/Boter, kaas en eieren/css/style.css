@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    text-align: center;
+    color: #FF007F;
+    background-color: #212121;
+    font-family: Arial, sans-serif;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: #FF007F;
+}
+
+header .turn-indicator {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #00FFFF;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.row .cell {
+    width: 160px;
+    height: 160px;
+    font-size: 50px;
+    background-color: #212121;
+    border: 2px solid #39FF14;
+    color: #FF007F;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.row .cell:hover {
+    background-color: #424242;
+    transform: scale(1.05);
+}
+
+.row .cell.o {
+    color: #00FFFF;
+}
+
+.row .cell.winner {
+    background-color:lightgreen;
+    color: #212121;
+}
+
+footer .reset {
+    width: 300px;
+    height: 60px;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: #39FF14;
+    color: #212121;
+    border: 2px solid #39FF14;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animatie voor hover-effecten */
+}
+
+footer .reset:hover {
+    background-color: #32CC12;
+    transform: scale(1.05); /* Vergroot de knop bij hover */
+}
+
+footer {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}

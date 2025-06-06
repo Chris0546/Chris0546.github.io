@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+ 
+.game-container {
+    text-align: center;
+    border: 2px solid #333;
+    padding: 20px;
+    background-color: white;
+    width: 400px;
+}
+ 
+.player-info input {
+    margin-top: 10px;
+}
+ 
+.score-board {
+    margin-top: 20px;
+    font-size: 18px;
+}
+ 
+.mole-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+ 
+.hole {
+    width: 80px;
+    height: 80px;
+    background-color: #8b4513;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+ 
+.hole.mole {
+    background-color: #228b22;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+ 
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+}
+#hammer {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #f00;
+    border-radius: 50%;
+    pointer-events: none; /* zorgt ervoor  dat de hamer geen invloed heeft op de gaten*/
+    z-index: 10;
+}
+.mole {
+background-color: brown;
+border-radius: 50%;
+position: absolute;
+background-image: url("../img/mol.avif");
+width: 50px;
+height: 50px;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%  );
+}
+.grid {
+    width: 600px;
+    height: 600px;
+}
+.square {
+    height: 200px;
+    width: 200px;
+    border-color: black 1px;
+}
