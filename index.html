@@ -14,31 +14,41 @@
 
 <body class="bg-dark">
   <div class="container-fluid p-0 mb-0">
-    <header class="row text-center">
-      <div class="col-8 bg-success fs-2 p-0 d-flex justify-content-start">
-        <p class="text-light ms-4">Welkom op mijn portfolio</p>
-      </div>
-
-      <div class="col-4 bg-success d-flex justify-content-center navbar-expand-lg">
-        <ul class="nav">
-          <li class="nav-item">
-            <a href="#home" class="nav-link text-dark">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#about_me" class="nav-link text-dark">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a href="#service" class="nav-link text-dark">Service</a>
-          </li>
-          <li class="nav-item">
-            <a href="#project" class="nav-link text-dark">Project</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link text-dark">Contact Me</a>
-          </li>
-        </ul>
-      </div>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-4 fs-2" href="#">Welkom op mijn portfolio</a>
+    
+          <!-- Toggle button for mobile -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="#home" class="nav-link text-light">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about_me" class="nav-link text-light">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a href="#service" class="nav-link text-light">Service</a>
+              </li>
+              <li class="nav-item">
+                <a href="#project" class="nav-link text-light">Project</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link text-light">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
+  
 
     <section id="home" class="vh-100 d-flex align-items-center bg-dark text-white">
       <div class="container text-center col-md-4 p-0">
@@ -187,22 +197,20 @@
      </div>
     </div>
    </section>
-
+ 
    <section id="contact" class="py-5 bg-success text-dark">
-  <div class="container">
+   <div class="container">
     <h2 class="text-center mb-4">Contact Me</h2>
-    
-
     <div class="row justify-content-center">
       <div class="col-md-8">
         <form>
           <div class="mb-3">
             <label for="name" class="form-label">Your Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Your Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
           </div>
           <div class="mb-3">
             <label for="message" class="form-label">Message</label>
@@ -217,9 +225,9 @@
           <p>Location: Delft, The Netherlands</p>
         </div>
       </div>
+     </div>
     </div>
-  </div>
-</section>
+   </section>
 
 
     <footer class="col-12 bg-dark text-center">
